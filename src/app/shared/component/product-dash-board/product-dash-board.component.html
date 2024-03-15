@@ -1,0 +1,8 @@
+<!-- <app-product-form></app-product-form> -->
+<div class="text-rigth">
+    <button class="btn btn-primary" (click)="onProductAdd()">Add Product</button>
+</div>
+
+<app-product-card [productData]="productArray"
+(emitProduct)="productEdit($event)"
+(emitProductDelete)="onDeleteProd($event)"></app-product-card>

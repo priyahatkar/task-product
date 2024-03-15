@@ -1,0 +1,18 @@
+
+
+<div class="card my-3" *ngFor="let prod of productData">
+    <div class="card-header">
+        <h3>
+            {{prod.name}}
+        </h3>
+    </div>
+    <div class="card-body">
+        <p>
+            {{prod.detail}}
+        </p>
+    </div>
+    <div class="card-footer d-flex justify-content-between">
+        <button class="btn btn-outline-primary" (click)="onEditProduct(prod)">Edit</button>
+        <button class="btn btn-outline-danger" (click)="onDeleteProduct(prod.id)">Delete</button>
+    </div>
+</div>
